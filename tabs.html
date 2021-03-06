@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  // Jquery UI hämtad från Jquery UI hemsida
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Krav</a></li>
+    <li><a href="#tabs-2">Mål</a></li>
+    <li><a href="#tabs-3">Tech stack</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Krav / Kriterier </p>
+  </div>
+  <div id="tabs-2">
+    <p>Mål med task</p>
+  </div>
+  <div id="tabs-3">
+    <p>Tech stack till task </p>
+  </div>
+</div>
+ 
+<!--Gå tillbaka till index.html // kanban board-->
+<div class="goback" style="display: flex; justify-content: center; align-items: center;">
+  <button class="back" style="background-color: #666; padding: 20px;">
+    <a href="index.html" style="text-decoration: none;">Gå tillbaka till Kanban Board!</a>
+  </button>
+</div>
+ 
+</body>
+</html>

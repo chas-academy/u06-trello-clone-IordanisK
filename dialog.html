@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dialog</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  // Jquery UI hämtad från Jquery UI hemsida
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="dialog" title="Basic dialog">
+  <p> Dialog angående task från kanban board skrivs in här!</p>
+</div>
+ 
+<button id="opener">Open Dialog</button>
+ 
+        <!--Gå tillbaka till index.html // kanban board-->
+        <div class="goback" style="display: flex; justify-content: center; align-items: center;">
+            <button class="back" style="background-color: #666; padding: 20px;">
+                <a href="index.html" style="text-decoration: none; color: #fff;">Gå tillbaka till Kanban Board!</a>
+            </button>
+        </div>
+</body>
+</html>
